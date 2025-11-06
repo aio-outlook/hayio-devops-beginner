@@ -67,6 +67,25 @@ jobs:
 
 Outcome: You can automate simple workflows triggered by code changes.
 
++ References & Tools:
+  - GitHub Actions (docs): https://docs.github.com/actions
+  - Jenkins (CI server): https://www.jenkins.io/
+  - GitLab CI/CD: https://docs.gitlab.com/ee/ci/
+  - CircleCI: https://circleci.com/docs/
+  - Azure Pipelines: https://learn.microsoft.com/azure/devops/pipelines/
+  - Best practices: pipeline as code, small fast jobs, test automation, artifact versioning
+
+---
+
+## Stage 4 — Containers
+See detailed guide: [Stage 4 — Containers](./stage-4-containers.md)
+
+## Stage 5 — Infrastructure as Code
+See detailed guide: [Stage 5 — IaC (Terraform)](./stage-5-iac.md)
+
+## Stage 6 — Observability and Security
+See detailed guide: [Stage 6 — Observability & Security](./stage-6-observability.md)
+
 ---
 
 ## Community
