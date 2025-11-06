@@ -1,2 +1,80 @@
-# hayio-devops-beginner
-Beginners Guide to DevOps
+# Hayio DevOps Circle — Beginner’s Path
+
+A structured, beginner-friendly guide to learning DevOps fundamentals.
+
+---
+
+## Learning Overview
+| Stage | Focus | Key Skills |
+|--------|--------|------------|
+| 1 | Introduction to DevOps | Mindset, Culture, SDLC |
+| 2 | Version Control | Git, GitHub |
+| 3 | Automation (CI/CD) | Pipelines, Workflows |
+| 4 | Containers | Docker Basics |
+| 5 | Infrastructure as Code | Terraform, Cloud Setup |
+| 6 | Observability and Security | Monitoring, IAM, Best Practices |
+
+---
+
+## Stage 1 — Introduction to DevOps
+Understand the purpose and principles of DevOps.
+
+- [Microsoft Learn – What is DevOps?](https://learn.microsoft.com/en-us/devops/what-is-devops)
+- [AWS DevOps Overview](https://aws.amazon.com/devops/what-is-devops/)
+- [Atlassian – CI/CD Explained](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd)
+
+Outcome: You’ll know what DevOps is and why it exists.
+
+---
+
+## Stage 2 — Git and GitHub
+Set up and learn the tools that drive collaboration.
+
+Install:
+- [Git](https://git-scm.com/downloads)
+- [VS Code](https://code.visualstudio.com/)
+- [GitHub Account](https://github.com/)
+
+Learn:
+- How to create a repository  
+- Making your first commit  
+- Branching and pull requests  
+- Collaborating with others  
+
+Outcome: You can manage code and version history like a DevOps engineer.
+
+---
+
+## Stage 3 — CI/CD Foundations
+Learn how automation helps teams build and deploy faster.
+
+Core Ideas:
+- What Continuous Integration (CI) means  
+- What Continuous Delivery (CD) means  
+- Sample workflow using GitHub Actions  
+
+Example Workflow (GitHub Actions):
+```yaml
+name: Simple CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Building project..."
+```
+
+Outcome: You can automate simple workflows triggered by code changes.
+
+---
+
+## Community
+Join the Hayio DevOps Circle discussions:
+- WhatsApp Beginners Hub: [Join Here](https://chat.whatsapp.com/IARjC1yFBfQ2duKw2y13Hd)
+- Website: [https://hayio.net](https://hayio.net)
+
+---
+
+## Motto
+Learn. Build. Secure. The African Way.
