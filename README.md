@@ -25,6 +25,12 @@ Understand the purpose and principles of DevOps.
 
 Outcome: You’ll know what DevOps is and why it exists.
 
+Tasks:
+- Read 2–3 introductory articles and write a 1-paragraph summary of DevOps goals.
+- Map a simple SDLC for a sample app (identify stages and handoffs).
+- Identify one manual bottleneck in the SDLC and propose an automation to address it.
+- Join the community links and introduce yourself.
+
 ---
 
 ## Stage 2 — Git and GitHub
@@ -42,6 +48,13 @@ Learn:
 - Collaborating with others  
 
 Outcome: You can manage code and version history like a DevOps engineer.
+
+Tasks:
+- Install Git and configure user.name and user.email.
+- Create a new repo, add a README, commit and push the first commit.
+- Create a feature branch, implement a small change, open a PR and merge via review.
+- Simulate a merge conflict and resolve it locally.
+- Add a basic CONTRIBUTING.md with branching and PR rules.
 
 ---
 
@@ -67,6 +80,13 @@ jobs:
 
 Outcome: You can automate simple workflows triggered by code changes.
 
+Tasks:
+- Create a GitHub Actions workflow that runs on PRs and executes basic tests or an echo command.
+- Add unit tests (or a simple smoke test) and make the CI fail when tests fail.
+- Add a build-and-push job to push artifacts (or Docker image) to a registry in a protected branch.
+- Add a status badge to the README showing the main workflow status.
+- Implement a simple release workflow (tag -> create release artifact).
+
 + References & Tools:
   - GitHub Actions (docs): https://docs.github.com/actions
   - Jenkins (CI server): https://www.jenkins.io/
@@ -81,7 +101,8 @@ Outcome: You can automate simple workflows triggered by code changes.
 See detailed guide: [Stage 4 — Containers](./stage-4-containers.md)
 
 ## Stage 5 — Infrastructure as Code
-See detailed guide: [Stage 5 — IaC (Terraform)](./stage-5-iac.md)
+See detailed guide: [Stage 5 — IaC (Terraform)](./stage-5-iac.md)  
+Includes cloud provider examples (AWS / GCP / Azure) in the detailed guide.
 
 ## Stage 6 — Observability and Security
 See detailed guide: [Stage 6 — Observability & Security](./stage-6-observability.md)
