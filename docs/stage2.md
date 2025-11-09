@@ -114,15 +114,14 @@ git push -u origin main
 
 ## Step 6: Branching and Collaboration
 
- Branching and Collaboration
+This step explains how to organise collaborative work with branches and pull requests.
 
 ### Why Branching Matters
-Branching allows developers to work on new features, bug fixes, or experiments **without disrupting the main codebase**.  
-It keeps development organized, enables parallel work, and ensures that `main` or `master` always remains stable.
 
-A typical workflow:
+Branching allows developers to work on new features, fixes, or experiments **without disrupting the main codebase**. It keeps work organized, enables parallel contributions, and protects the stability of the `main` (or `master`) branch.
 
 ### Common Branch Types
+
 | Branch | Purpose |
 |---------|----------|
 | `main` | Production-ready code |
@@ -130,43 +129,46 @@ A typical workflow:
 | `feature/*` | New features or updates |
 | `hotfix/*` | Quick fixes on production issues |
 
----
-
 ### Creating and Switching Branches
-Create a new branch for your feature:
+
+Create and switch to a new branch for your change:
+
 ```bash
-git branch feature/update-readme, git checkout -b feature/update-readme, echo "Updated project notes" >> readme.txt
+git checkout -b feature/update-readme
+echo "Updated project notes" >> readme.txt
 git add .
-git commit -m "updated readme section", Collaboration via Pull Requests (PRs)
+git commit -m "updated readme section"
+```
 
-Once your branch is pushed to GitHub:
+Push the branch to GitHub so collaborators can review it:
 
-Open your repository in the browser.
+```bash
+git push -u origin feature/update-readme
+```
 
-Click Compare & Pull Request.
+### Collaboration via Pull Requests (PRs)
 
-Add a title and short description.
+Once your branch is on GitHub:
 
-Assign reviewers if working in a team.
+1. Open the repository in your browser.
+2. Click **Compare & pull request**.
+3. Add a clear title and short description.
+4. Assign reviewers (if working in a team) and click **Create pull request**.
 
-Click Create Pull Request.
+PRs let teammates review your work, suggest changes, or approve it before merging.
 
-The Pull Request (PR) allows others to review your code, suggest changes, or approve it before merging.
+### Best Practices
 
-After approval:Best Practices
+- Always branch from the latest `main` or `dev`.
+- Use descriptive names (e.g., `feature/add-login`, `bugfix/fix-auth-error`).
+- Keep PRs small and focused for faster reviews.
+- Delete merged branches to keep the repository tidy.
 
-Always branch from the latest main or dev.
+### Summary
 
-Use descriptive branch names (e.g., feature/add-login, bugfix/fix-auth-error).
-
-Keep PRs small and focused — easier to review and merge.
-
-Delete merged branches to keep your repo clean.
-
-✅ Summary:
-Branching helps isolate work.
-Pull Requests encourage peer review.
-Together, they make collaboration smoother and safer.
+- Branching helps isolate work.
+- Pull requests encourage peer review.
+- Together, they make collaboration smoother and safer.
 
 ## Step 7: Common Git Commands
 
