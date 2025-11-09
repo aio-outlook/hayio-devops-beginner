@@ -112,7 +112,63 @@ git push -u origin main
 - `git branch -M main` renames the current branch to `main`.
 - `git push -u origin main` uploads the branch and sets `origin/main` as the upstream target.
 
-## Step 6: Common Git Commands
+## Step 6: Branching and Collaboration
+
+ Branching and Collaboration
+
+### Why Branching Matters
+Branching allows developers to work on new features, bug fixes, or experiments **without disrupting the main codebase**.  
+It keeps development organized, enables parallel work, and ensures that `main` or `master` always remains stable.
+
+A typical workflow:
+
+### Common Branch Types
+| Branch | Purpose |
+|---------|----------|
+| `main` | Production-ready code |
+| `dev` | Integration and testing branch |
+| `feature/*` | New features or updates |
+| `hotfix/*` | Quick fixes on production issues |
+
+---
+
+### Creating and Switching Branches
+Create a new branch for your feature:
+```bash
+git branch feature/update-readme, git checkout -b feature/update-readme, echo "Updated project notes" >> readme.txt
+git add .
+git commit -m "updated readme section", Collaboration via Pull Requests (PRs)
+
+Once your branch is pushed to GitHub:
+
+Open your repository in the browser.
+
+Click Compare & Pull Request.
+
+Add a title and short description.
+
+Assign reviewers if working in a team.
+
+Click Create Pull Request.
+
+The Pull Request (PR) allows others to review your code, suggest changes, or approve it before merging.
+
+After approval:Best Practices
+
+Always branch from the latest main or dev.
+
+Use descriptive branch names (e.g., feature/add-login, bugfix/fix-auth-error).
+
+Keep PRs small and focused — easier to review and merge.
+
+Delete merged branches to keep your repo clean.
+
+✅ Summary:
+Branching helps isolate work.
+Pull Requests encourage peer review.
+Together, they make collaboration smoother and safer.
+
+## Step 7: Common Git Commands
 
 | Command | Purpose |
 |---------|---------|
@@ -125,7 +181,7 @@ git push -u origin main
 | `git branch` | List or manage local branches |
 | `git checkout <branch>` | Switch to another branch |
 
-## Step 7: Troubleshooting
+## Step 8: Troubleshooting
 
 | Issue | What It Means | Fix |
 |-------|----------------|-----|
@@ -139,11 +195,8 @@ Update the remote if you need to correct its URL:
 git remote set-url origin https://github.com/<username>/<repo>.git
 ```
 
-## Step 8: Key Takeaways
+## Step 9: Key Takeaways
 
 - A classic PAT with only the `repo` scope is sufficient for pushes, pulls, and cloning over HTTPS.
 - SSH keys provide a secure, reusable option ideal for automation and long-lived access.
 - Core Git loop: `git init → git add → git commit → git push` keeps local and remote repositories synchronized.
-
-For the full walkthrough of the live session, see:  
-[Git & GitHub Session (2025-11-08)](./git-github-session-2025-11-08.md)
