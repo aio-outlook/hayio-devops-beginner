@@ -42,6 +42,8 @@ Tasks:
 ## Stage 2: Git and GitHub
 After understanding the culture, Stage 2 covers the collaboration tools you will use daily.
 
+See detailed guide: [Stage 2 — Git & GitHub](./docs/stage2.md)
+
 Install:
 - [Git](https://git-scm.com/downloads)
 - [VS Code](https://code.visualstudio.com/)
